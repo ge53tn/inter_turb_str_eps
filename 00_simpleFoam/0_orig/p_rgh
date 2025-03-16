@@ -1,0 +1,52 @@
+/* OpenFOAM p file from SSIIM 2  plastic test                                    test  */
+
+FoamFile 
+{
+    version      2.0;
+    format       ascii;
+    class        volScalarField;
+    location     "0";
+    object      p_rgh;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [1 -1 -2 0 0 0 0];
+
+internalField   uniform 0;
+
+boundaryField
+{
+    bedWall
+    {
+        type            zeroGradient;
+    }
+    leftSide
+    {
+        type            zeroGradient;
+    }
+    rightSide
+    {
+        type            zeroGradient;
+    }
+    freeSurface
+    {
+        type            totalPressure;
+        p0              uniform 0;
+    }
+    inletWater
+    {
+        type            zeroGradient;
+    }
+    outletWater
+    {
+        type            fixedValue;
+        value           uniform 0;
+    }
+    defaultFaces
+    {
+        type            empty;
+    }
+}
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
