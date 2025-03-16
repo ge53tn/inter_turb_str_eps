@@ -16,7 +16,7 @@ cp -rf 0_orig 0
 
 decomposePar > log.decomposePar 2>&1
 
-mpirun -np 8 simpleFoam -parallel > log.simpleFoam 2>&1
+mpirun -np 8 interFoam -parallel > log.simpleFoam 2>&1
 
 reconstructPar > log.reconstructPar 2>&1
 
