@@ -24,3 +24,4 @@ pyFoamCopyLastToFirst.py . . > log.pyFoamCopyLastToFirst
 
 pyFoamClearCase.py . --processors-remove --keep-postprocessing > log.pyFoamClearCase
 
+postProcess -func sampleDict_U_k
