@@ -31,12 +31,12 @@ divSchemes
     div(phi,alpha)  Gauss vanLeer;
     div(phirb,alpha) Gauss linear;
     div(rhoPhi,k)    Gauss upwind default;
-    div(phi,k)      Gauss upwind default;
+    div(phi,k)       Gauss bounded limitedLinear 1;
+    div(phi,epsilon) Gauss bounded limitedLinear 1;
 //   div(phi,omega)  Gauss upwind default;
 //    div(rhoPhi,omega) Gauss upwind default;
 
     div(rhoPhi,epsilon) Gauss limitedLinear 1;
-    div(phi,epsilon) Gauss limitedLinear 1;
 
     div(((rho*nuEff)*dev2(T(grad(U))))) Gauss linear;
 }
