@@ -25,7 +25,7 @@ stopAt          endTime;
 
 endTime         70;
 
-deltaT          1;  // old value 0.05 TRY 0.5 İF NOT WORKS
+deltaT          0.5;  // old value 0.05 TRY 0.5 İF NOT WORKS
 
 writeControl    adjustableRunTime;
 
