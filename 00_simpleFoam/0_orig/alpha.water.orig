@@ -47,7 +47,7 @@ boundaryField
     {
         type            inletOutlet;
         inletValue      uniform 1; // Water can exit, air can enter, NOT SURE
-        value           uniform 1; // Initially air at the outlet
+        value           uniform 1; // 
     }
 }
 
