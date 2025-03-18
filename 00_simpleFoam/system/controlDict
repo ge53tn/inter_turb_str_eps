@@ -23,9 +23,9 @@ startTime       0;
 
 stopAt          endTime;
 
-endTime         2000;
+endTime         70;
 
-deltaT          0.05;  // old value 0.05
+deltaT          1;  // old value 0.05 TRY 0.5 İF NOT WORKS
 
 writeControl    adjustableRunTime;
 
@@ -48,10 +48,10 @@ runTimeModifiable true;
 adjustTimeStep yes;
 
 //new
-maxCo           0.5; // Reduced for stability
-maxAlphaCo      0.5; // Reduced for sharper interfaces
+maxCo           2;
+maxAlphaCo      1;
 
-maxDeltaT       0.1; // Smaller maximum time step
+maxDeltaT       1;
 libs ("libturbulenceModels.so");
 
 // ************************************************************************* //
